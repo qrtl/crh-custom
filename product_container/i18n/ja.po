@@ -1,0 +1,49 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* product_container
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-04 09:38+0000\n"
+"PO-Revision-Date: 2019-11-04 09:38+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_container
+#: selection:product.template,container:0
+msgid "Bottle"
+msgstr "瓶"
+
+#. module: product_container
+#: model:ir.model.fields,field_description:product_container.field_product_product__container
+#: model:ir.model.fields,field_description:product_container.field_product_template__container
+msgid "Container"
+msgstr "容器"
+
+#. module: product_container
+#: selection:product.template,container:0
+msgid "Keg"
+msgstr "樽"
+
+#. module: product_container
+#: model_terms:ir.ui.view,arch_db:product_container.product_template_form_view
+msgid "Liquor Tax Reporting"
+msgstr "酒税帳簿"
+
+#. module: product_container
+#: model:ir.model,name:product_container.model_product_template
+msgid "Product Template"
+msgstr "プロダクトテンプレート"
+
+#. module: product_container
+#: model:ir.model.fields,help:product_container.field_product_product__container
+#: model:ir.model.fields,help:product_container.field_product_template__container
+msgid "The value will be used in liquor tax reporting."
+msgstr "この設定は酒税帳簿で使用されます。"
+
