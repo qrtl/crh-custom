@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_stock_quant" model="ir.actions.act_window">
+         <field name="name">Stock Quants</field>
+         <field name="res_model">stock.quant</field>
+         <field name="type">ir.actions.act_window</field>
+         <field name="view_type">form</field>
+         <field name="context">{'search_default_internal_loc': 1, 'search_default_positive': 1}</field>
+         <field name="search_view_id" ref="stock.quant_search_view"/>
+    </record>
+
+    <menuitem action="action_stock_quant"
+              id="menu_stock_quant"
+              parent="stock.menu_warehouse_report" sequence="10"/>
+
+</odoo>
