@@ -6,7 +6,7 @@ from odoo import fields, models
 class StockMoveLine(models.Model):
     _inherit = "stock.move.line"
 
-    categ_id = fields.Many2one(related="product.category.categ_id", store=True,)
+    categ_id = fields.Many2one(related="product_id.categ_id", store=True)
 
 # class SaleOrder(models.Model):
 #     _inherit = "sale.order"
