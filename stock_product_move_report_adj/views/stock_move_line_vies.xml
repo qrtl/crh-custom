@@ -20,6 +20,9 @@
                     string="Product Category"
                     name="categ_id"
                 />
+                <filter name="this_month_move" string="This month's move" domain="[('date', '<=', (context_today()+datetime.timedelta(days=7)).strftime('%Y-%m-%d 15:00:00'))]"/>
+                <filter name="last_month_move" string="Last month's move" domain="[('date','&gt;=',(context_today()-relativedelta(months=1,day=1)).strftime('%Y-%m-%d'))]"/>
+                <filter name="Past_3months" string="Past 3 Months's move" domain="[('date','&gt;=',(context_today()-relativedelta(months=3,day=1)).strftime('%Y-%m-%d'))]"/>
             </xpath>
             <xpath expr="//filter[@name='Product']" position="after">
                 <filter
