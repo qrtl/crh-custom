@@ -1,0 +1,44 @@
+<odoo>
+    <record id="view_picking_form" model="ir.ui.view">
+        <field name="name">stock.picking.form</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="partner_invoice_id"/>
+                <field name="same_invoiced_id"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="vpicktree" model="ir.ui.view">
+        <field name="name">stock.picking.tree</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.vpicktree" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="partner_invoice_id"/>
+            </xpath>
+        </field>
+    </record>
+    <!-- <record id="view_picking_internal_search" model="ir.ui.view">
+        <field name="name">stock.picking.internal.search</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_internal_search" />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='draft']" position="before">
+                <filter
+                    string="same"
+                    name="same"
+                    domain="[('partner_invoice_id', '=', 'partner_shipping_id')]"
+                />
+                <filter
+                    string="different"
+                    name="different"
+                    domain="[('partner_invoice_id', '!=', 'partner_shipping_id')]"
+                />
+                <separator />
+            </xpath>
+        </field>
+    </record> -->
+</odoo>
+
