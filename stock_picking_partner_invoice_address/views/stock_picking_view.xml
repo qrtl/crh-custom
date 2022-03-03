@@ -5,12 +5,18 @@
         <field name="inherit_id" ref="stock.view_picking_form" />
         <field name="arch" type="xml">
             <xpath expr="//field[@name='partner_id']" position="after">
-                <field name="partner_invoice_id"/>
-                <field name="same_invoiced_id"/>
+                <field
+                    name="partner_invoice_id"
+                    attrs="{'invisible':[('picking_type_code','!=','outgoing')]}"
+                />
+                <field
+                    name="is_identical_partners"
+                    attrs="{'invisible':[('picking_type_code','!=','outgoing')]}"
+                    />
             </xpath>
         </field>
     </record>
-    <record id="vpicktree" model="ir.ui.view">
+    <record id="vpicktree_outgoing" model="ir.ui.view">
         <field name="name">stock.picking.tree</field>
         <field name="model">stock.picking</field>
         <field name="inherit_id" ref="stock.vpicktree" />
@@ -41,4 +47,3 @@
         </field>
     </record> -->
 </odoo>
-

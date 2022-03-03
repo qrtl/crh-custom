@@ -1,1 +1,42 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* stock_picking_partner_invoice_address
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-03 11:22+0000\n"
+"PO-Revision-Date: 2022-03-03 11:22+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: stock_picking_partner_invoice_address
+#: model:ir.model.fields,field_description:stock_picking_partner_invoice_address.field_stock_picking__partner_invoice_id
+msgid "Invoice Address"
+msgstr "請求書住所"
+
+#. module: stock_picking_partner_invoice_address
+#: model:ir.model.fields,help:stock_picking_partner_invoice_address.field_stock_picking__partner_invoice_id
+msgid "Invoice address for current sales order."
+msgstr "この販売オーダの請求先"
+
+#. module: stock_picking_partner_invoice_address
+#: model:ir.model.fields,field_description:stock_picking_partner_invoice_address.field_stock_picking__is_identical_partners
+msgid "PartnerAdd = InvoiceAdd"
+msgstr "取引先＝請求先"
+
+#. module: stock_picking_partner_invoice_address
+#: model:ir.model,name:stock_picking_partner_invoice_address.model_stock_picking
+msgid "Transfer"
+msgstr "運送"
+
+#. module: stock_picking_partner_invoice_address
+#: model:ir.model.fields,help:stock_picking_partner_invoice_address.field_stock_picking__is_identical_partners
+msgid "Whether or not the trading partner address is the same as the Invoice Address."
+msgstr "配送の取引先(配送先住所)と請求先住所が同じかどうか"
 
