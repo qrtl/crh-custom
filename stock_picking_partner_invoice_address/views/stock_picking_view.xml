@@ -26,24 +26,24 @@
             </xpath>
         </field>
     </record>
-    <!-- <record id="view_picking_internal_search" model="ir.ui.view">
+    <record id="view_stock_picking_partner_invoice_address_search" model="ir.ui.view">
         <field name="name">stock.picking.internal.search</field>
         <field name="model">stock.picking</field>
         <field name="inherit_id" ref="stock.view_picking_internal_search" />
         <field name="arch" type="xml">
             <xpath expr="//filter[@name='draft']" position="before">
                 <filter
-                    string="same"
+                    string="Same as the Invoice Address"
                     name="same"
-                    domain="[('partner_invoice_id', '=', 'partner_shipping_id')]"
+                    domain="[('is_identical_partners', '=', 'True')]"
                 />
                 <filter
-                    string="different"
+                    string="Different as the Invoice Address"
                     name="different"
-                    domain="[('partner_invoice_id', '!=', 'partner_shipping_id')]"
+                    domain="[('is_identical_partners', '!=', 'True')]"
                 />
                 <separator />
             </xpath>
         </field>
-    </record> -->
+    </record>
 </odoo>
