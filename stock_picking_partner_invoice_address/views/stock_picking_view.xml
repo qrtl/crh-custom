@@ -38,7 +38,7 @@
                     domain="[('is_identical_partners', '=', 'True')]"
                 />
                 <filter
-                    string="Different as the Invoice Address"
+                    string="Different to the Invoice Address"
                     name="different"
                     domain="[('is_identical_partners', '!=', 'True')]"
                 />
