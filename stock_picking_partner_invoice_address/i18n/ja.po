@@ -42,7 +42,7 @@ msgstr "配送の取引先(配送先住所)と請求先住所が同じかどう�
 
 #. module: stock_picking_partner_invoice_address
 #: model_terms:ir.ui.view,arch_db:stock_picking_partner_invoice_address.view_stock_picking_partner_invoice_address_search
-msgid "Different as the Invoice Address"
+msgid "Different to the Invoice Address"
 msgstr "取引先と請求先が違う"
 
 #. module: stock_picking_partner_invoice_address
